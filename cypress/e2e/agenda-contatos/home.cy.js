@@ -8,8 +8,8 @@ describe('Testes para a home', () => {
 
     //Configuração do teste para inclusão
     it('Deve incluir os dados do novo contato', () => {
-        cy.get('input[type="text"]').type("André Soares");
-        cy.get('input[type="email"]').type("andre.email@teste.com");
+        cy.get('input[type="text"]').type("matheus costa");
+        cy.get('input[type="email"]').type("matheus.email@teste.com");
         cy.get('input[type="tel"]').type("00 00000-0000");
         cy.contains("Adicionar").click();
         cy.screenshot("print-inclusao"); // Para gerar um print do teste finalizado
